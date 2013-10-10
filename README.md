@@ -1,6 +1,6 @@
 ## ALPS Trivial Example - Contacts ##
 
-This example node project shows a trivial example of using ALPS to create a common interface. It shows a simple example of taking local storage and an internal object model, mapping that to a shared interface described by an ALPS document, and outputing that in a registered hypermedia type (collection+JSON). In a fully functioning service, the work of mapping and creating response representation is the final step in a service that accepts requests, processes them and finally creates the response.
+This example node project shows one way to use ALPS to create a common interface. It shows a simple example of taking local storage and an internal object model, mapping that to a shared interface described by an ALPS document, and outputing that in a registered hypermedia type (collection+JSON). In a fully functioning service, the work of mapping and creating response representation is the final step in a service that accepts requests, processes them and finally creates the response.
 
 + contact-storage.js : This is the stored data on the server. Note the field names are unique to local storage
 + contact-alps.xml : This is the ALPS document (in XML format) that describes the shared interface for contacts including field names (givenName, familyName, email, telephone) and a safe idempotent hypermedia transition ("search").
