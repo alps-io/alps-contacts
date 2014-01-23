@@ -1,0 +1,92 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Documentation</title>
+</head>
+<body>
+<h1>Documentation</h1>
+<doc format="text">
+        A list of contacts that also supports search
+    </doc>
+    
+
+    
+    <div class="descriptor">
+<h4 class="id" id="search">search</h4>
+<doc>
+            Simple hypermedia control for getting a list of contacts
+        </doc><ul class="attributes">
+<li>id : search</li>
+<li>type : safe</li>
+<li>rt : contact</li>
+<li>Contains: <div class="descriptor">
+<h4 class="id" id="name">name</h4>
+<doc>
+                Input for search form
+            </doc><ul class="attributes">
+<li>id : name</li>
+<li>type : semantic</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+
+    
+    <div class="descriptor">
+<h4 class="id" id="contact">contact</h4>
+<doc>
+            Individual Contact
+        </doc><ul class="attributes">
+<li>id : contact</li>
+<li>type : semantic</li>
+<li>Contains: <div class="descriptor">
+<h4 class="id" id="link">link</h4>
+<doc>
+                Link to individual contact
+            </doc><ul class="attributes">
+<li>id : link</li>
+<li>type : safe</li>
+</ul>
+</div>
+<div class="descriptor">
+<h4 class="id" id="givenName">givenName</h4>
+<ul class="attributes">
+<li>id : givenName</li>
+<li>type : semantic</li>i
+              <li>href : <a href="http://schema.org/givenName">http://schema.org/givenName</a>
+</li>
+</ul>
+</div>
+<div class="descriptor">
+<h4 class="id" id="familyName">familyName</h4>
+<ul class="attributes">
+<li>id : familyName</li>
+<li>type : semantic</li>i
+              <li>href : <a href="http://schema.org/familyName">http://schema.org/familyName</a>
+</li>
+</ul>
+</div>
+<div class="descriptor">
+<h4 class="id" id="email">email</h4>
+<ul class="attributes">
+<li>id : email</li>
+<li>type : semantic</li>i
+              <li>href : <a href="http://schema.org/email">http://schema.org/email</a>
+</li>
+</ul>
+</div>
+<div class="descriptor">
+<h4 class="id" id="telephone">telephone</h4>
+<ul class="attributes">
+<li>id : telephone</li>
+<li>type : semantic</li>i
+              <li>href : <a href="http://schema.org/telephone">http://schema.org/telephone</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</body>
+</html>
