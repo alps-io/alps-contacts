@@ -8,10 +8,12 @@
 */
 var http = require('http');
 var port = process.env.PORT||1337;
-var base = "http://alps.mamund.c9.io";
+var base = "http://locahost:"+port;
 
 // handle requests
 function handler(req, res) {
+    base = "http://"+req.headers.host;
+    
     applyMap();
     res.writeHead(200, {"content-type":"application/json"});
     res.end(JSON.stringify(template));
@@ -111,9 +113,14 @@ var template = { "collection" :
     {
         "links" : [
             {
-                "href" : base+"/contact-alps.xml", 
+                "href" : "https://rawgit.com/alps-io/alps-contacts/master/contact-alps.js", 
                 "rel" : "profile"
+            },
+            {
+                "href" : "https://rawgit.com/alps-io/alps-contacts/master/contact-doc.html", 
+                "rel" : "help"
             }
+            
         ],
         
         "items" : [],
